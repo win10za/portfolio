@@ -1,0 +1,594 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    background: #000000;
+    border-top: 5px solid #40aed7;
+}
+
+.nav-grid{
+    display: grid;
+    grid-template-columns: 800px 1fr;
+}
+
+.logo{
+    margin-top: 40px;
+    color: white;
+
+}
+
+.logo h1{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+ul.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 30%;
+}
+
+ul.menu li{
+     list-style: none;
+}
+
+ul.menu li a{
+     text-decoration: none;
+     color: white;
+     text-transform: uppercase;
+     transition: .3s ease-in-out;
+     padding: 5px 10px;
+}
+
+ul.menu li a:hover{
+    background: #40aed7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+.name{
+    margin-top: 10px;
+    font-size: 50px;
+    color: #333333;
+}
+
+.pic{
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pic img{
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 300px;
+    
+}
+
+.hobbies{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.hobbies-grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.hobbies-item{
+    border: 1px solid #979797;
+    padding: 20px;
+    translate: .3s ease-in-out;
+}
+
+.hobbies-item .fa{
+    font-size: 60px;
+    color: #333333;
+}
+
+.hobbies-item h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 20px 0px;
+}
+
+.hobbies-item p{
+    font-size: 20px;
+    color: #979797;
+}
+
+
+.hobbies-item:hover{
+    border: 1px solid #40aed7;
+    padding: 20px;
+    background: #40aed7;
+}
+
+.hobbies-item:hover .fa{
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.hobbies-item:hover h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 20px 0px;
+}
+
+.hobbies-item:hover p{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.about_me{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 60px;
+    color: #222222;
+}
+
+.about_me1{
+    width: 100%;
+    height: auto;
+}
+
+.about_me1_grid{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.about_me1_item{
+    border: 1px solid #979797;
+    padding: 20px;
+    translate: .3s ease-in-out;
+}
+.about_me1_item .fa{
+    font-size: 60px;
+    color: #333333;
+}
+.about_me1_item h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 20px 0px;
+}
+.about_me1_item p{
+    font-size: 20px;
+    color: #979797;
+}
+.about_me1_item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #979797;
+}
+
+.about_me1_item:hover{
+    border: 1px solid #40aed7;
+    padding: 20px;
+    background: #40aed7;
+}
+.about_me1_item:hover .fa{
+    font-size: 60px;
+    color: #ffffff;
+}
+.about_me1_item:hover h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 20px 0px;
+}
+.about_me1_item:hover p{
+    font-size: 20px;
+    color: #ffffff;
+}
+.about_me1_item:hover a{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.source{
+    width: 100%;
+    height: 60px;
+    background: #000000;
+}
+
+.source-grid{
+    display: grid;
+    height: 60px;
+    color: #979797;
+    align-content: center;
+}
+
+.source-text{
+    justify-self: center;
+}
+
+.source-text a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: .3s ease-in-out;
+    padding-top: 5px;
+}
+
+.source-text a:hover{
+    background: #40aed7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* project */
+
+.project{
+    width: 100%;
+    height: auto;
+}
+
+.project-grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    
+}
+.project-item img{
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    width: 250px;
+    transition: .3s ease-in-out;
+}
+
+.project-item img:hover{
+    border: 1px solid #ddd;
+    padding: 3px;
+    width: 500px;
+}
+
+.project-name{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #979797;
+}
+
+.project-name h1{
+    font-size : 24px;
+}
+.project-name p{
+    margin-top: 10px;
+    font-size : 18px;
+    margin-bottom: 10px;
+}
+
+.assignment{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.work_grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-bottom: 20px;
+}
+
+.work_item{
+    translate: .3s ease-in-out;
+    text-align: center;
+}
+
+.work_item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #979797;
+    padding: 5px 10px;
+}
+
+.work_item a:hover{
+    background: #40aed7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+@media only screen and (max-width:950px){
+
+    header{
+        height: auto;
+    }
+
+    .logo h1{
+        font-size: 55px;
+    }
+
+    .nav-grid{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    ul.menu{
+        grid-template-columns: 1fr 1fr;
+    }
+    ul.menu li{
+        height: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .name{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .hobbies-grid{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .hobbies-item{
+        width: 90%;
+    }
+
+    .about_me{
+        font-size: 50px;
+    }
+
+    .about_me1_grid{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+
+    .about_me1_item{
+        width: 90%;
+    }
+
+    .project-grid{
+        grid-template-columns: 1fr 1fr ;
+        justify-items: center;
+    }
+
+    .project-name p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .assignment{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .work_grid{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .work_item{
+        height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .project-item img:hover{
+        border: 1px solid #ddd;
+        padding: 3px;
+        width: 350px;
+    }
+
+    .source{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    header{
+        height: auto;
+    }
+
+    .logo h1{
+        font-size: 55px;
+    }
+
+    .nav-grid{
+        text-align: center;
+        grid-template-columns: auto;
+    }
+
+    ul.menu{
+        grid-template-columns: auto;
+    }
+    ul.menu li{
+        height: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .name{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hobbies-grid{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .hobbies-item{
+        width: 90%;
+    }
+
+    .about_me{
+        font-size: 50px;
+    }
+
+    .about_me1_grid{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .about_me1_item{
+        width: 90%;
+    }
+
+    .project-grid{
+        grid-template-columns: auto ;
+        justify-items: center;
+    }
+
+    .project-name p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .assignment{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .work_grid{
+        grid-template-columns: auto;
+        justify-items: center;
+    }
+
+    .work_item{
+        height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .project-item img:hover{
+        border: 1px solid #ddd;
+        padding: 3px;
+        width: 350px;
+    }
+
+    .source{
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:480px){
+
+    header{
+        height: auto;
+    }
+
+    .logo h1{
+        font-size: 45px;
+    }
+
+    .nav-grid{
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    ul.menu{
+        grid-template-columns: 1fr;
+    }
+    ul.menu li{
+        height: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .name{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .pic img{
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        padding: 5px;
+        width: 200px;
+        
+    }
+
+    .hobbies-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .hobbies-item{
+        width: 80%;
+    }
+
+    .about_me{
+        font-size: 20px;
+    }
+
+    .about_me1_grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .about_me1_item{
+        width: 80%;
+    }
+
+    .project-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .project-name p{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .assignment{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .work_grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .work_item{
+        height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .project-item img:hover{
+        border: 1px solid #ddd;
+        padding: 3px;
+        width: 350px;
+    }
+
+    .source{
+        height: auto;
+    }
+
+
+
+}
